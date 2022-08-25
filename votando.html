@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" contet="Bart Dev - o vovô pedala">
+    <title>Votando</title>
+    <link rel="stylesheet" href="./CSS/visual.css">
+    <link rel="stylesheet" href="./CSS/votando.css"> 
+    <link rel="stylesheet" href="./CSS/apuracao.css"> 
+    
+    <script src="./js/scripVotar.js"></script>
+    
+    <script>
+        
+    </script>
+</head>
+<body onload="ocultarResultado()">
+    <div id="votacao"> 
+        <div class="headVotando">
+            <h1>VOTAÇÃO</h1>
+            <h3>Para Votar Click no botão do seu candidato</h3>
+            <hr/>
+        </div>
+        <section class="voto"> 
+            <div>                 
+                <button class="botaov" onclick='votar(1)'><img src="./Imagens/candHonestino.png"/></button>
+                <button class="botaov" onclick='votar(2)'><img src="./Imagens/candTrapacelino.png"/> </button> 
+                <button class="botaov" onclick='votar(3)' ><img src="./Imagens/candInocentico.png"/> </button>            
+            </div>
+            <div class="resultado">
+                <h3>RESUMO</h3>
+                <br/>
+                <h4>Total de Votos</h4>
+                <span id="totalVotos">0</span>
+                <br/>
+                <br/>
+                <button class="botaoGeral" onclick="resultado()">Apuração</button>        
+            </div>
+        </section>
+    </div>
+
+    <div class="resultadoE"> 
+        <header>
+            <h4>VOTAÇÃO 100% SEGURA ?</h3>        
+        </header>
+
+        <section class="apuracao">
+            <h3>Total de Votos</h3>
+            <h4 id="totaldeVotos"></h4>
+            <br/>
+            <h3>Votos por Candidato:</h3>
+            <p>Honestino </p><span id="honestino"></span>
+            <hr/>
+            <p>Trapacelino</p><span id="trapacelino"></span>
+            <hr/>
+            <p>Inocentiço </p><span id="inocentico"></span>
+            </hr>
+        </section>
+        <section class="resultado">
+            <h3>o vencedor com foi: TRAPACELINO</h3>
+            <p id="vencedor"></p>         
+        </section>
+        <div id="comoResolver">
+            <details>
+                <summary>Considerações Finais</summary>
+                <p>a Urna Eletrônica foi um avanço</p>
+                <p>nas Eleições isso não podemos</p>
+                <p>negar jamais!</p>
+                <p>contudo, não podemos simplesmente</p>
+                <p>aceitar que "pessoas de mau caráter"</p>
+                <p>venham a agir de má fé, DINHEIRO</p>
+                <p>compra muita coisa, inclusive</p>
+                <p>PESSOAS</p>
+                <p>precisamos mais que comerciais</p>
+                <p>e palavras, é preciso ação </p>
+                <p>algo visível para comprovar</p>
+                <p>que nosso voto não está sendo</p>
+                <p>roubado nem violado.</p>
+            </details>
+        </div>    
+    </div>
+        
+</body>
+</html>
