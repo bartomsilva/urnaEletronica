@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./CSS/votando.css"> 
     <link rel="stylesheet" href="./CSS/apuracao.css"> 
     
-    <script src="./js/scripVotar.js"></script>
-    
+    <script src="./js/ScriptVotar.js"></script>
     <script>
         
     </script>
@@ -35,8 +34,11 @@
                 <span id="totalVotos">0</span>
                 <br/>
                 <br/>
-                <button class="botaoGeral" onclick="resultado()">Apuração</button>        
+                <button class="botaoGeral" onclick="mostrarResultado()">Apuração</button>        
+                <br/>
+                <button Id='trapaca' class="botaoGeral" onclick="onOffTrapaca()">Desativar Trapaça</button>  
             </div>
+
         </section>
     </div>
 
@@ -58,8 +60,8 @@
             </hr>
         </section>
         <section class="resultado">
-            <h3>o vencedor foi: TRAPACELINO</h3>
-            <p id="vencedor"></p>         
+            <h3 id="nomedoVencedor"></h3>
+            <p id="votosdoVencedor"></p>         
         </section>
         <div id="comoResolver">
             <details>
@@ -77,6 +79,7 @@
                 <p>algo visível para comprovar</p>
                 <p>que nosso voto não está sendo</p>
                 <p>roubado nem violado.</p>
+                <br/>
             </details>
         </div>    
     </div>
