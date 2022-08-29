@@ -87,7 +87,7 @@ const mostrarResultado=()=>{
         }
 
         if (maisVotos > votosEmpate) {
-            document.querySelector('#nomedoVencedor').innerHTML = dadosdoGanhador.nome; 
+            document.querySelector('#nomedoVencedor').innerHTML = 'Vencedor '+dadosdoGanhador.nome; 
             document.querySelector('#votosdoVencedor').innerHTML = "com "+dadosdoGanhador.votos+' voto(s), teve '+dadosdoGanhador.porcento+'% dos votos'; 
         } else {
             document.querySelector('#nomedoVencedor').innerHTML = 'Empate'; 
