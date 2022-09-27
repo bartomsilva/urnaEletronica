@@ -19,8 +19,9 @@ body {
     align-items: center;
     
 }
-.botaov {
+.botaov, .voto img {
     margin-top: 10px;
+    border-radius: 15%;
 }
 
 .resultado {
